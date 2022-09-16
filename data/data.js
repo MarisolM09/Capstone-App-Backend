@@ -36,7 +36,7 @@ module.exports = {
             id: 1,
             hike_name: 'Skyline Trail Loop',
             location: "Mount Rainier National Park",
-            length: "6 miles rt",
+            hike_length: "6 miles rt",
             elevation_gain: "1,788ft",
             rating: "hard",
             user_id: 2
@@ -45,7 +45,7 @@ module.exports = {
             id: 2,
             hike_name: 'Chain Lakes Loop',
             location: "Mount Baker Snoqualmie National Forest",
-            length: "7.1 miles rt",
+            hike_length: "7.1 miles rt",
             elevation_gain: "1,886ft",
             rating: "hard",
             user_id: 4
@@ -54,7 +54,7 @@ module.exports = {
           id: 3,
           hike_name: 'Maple Pass Loop',
           location: "North Cascades National Park",
-          length: "7.4 miles rt",
+          hike_length: "7.4 miles rt",
           elevation_gain: "2,191ft",
           rating: "hard",
           user_id: 3
