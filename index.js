@@ -5,7 +5,6 @@ const hikesRoutes = require("./routes/hikesRoutes");
 
 const PORT = process.env.PORT || 5000;
 
-
 app.use(express.json());
 app.use("/hikers", hikersRoutes);
 app.use("/hikes", hikesRoutes);
