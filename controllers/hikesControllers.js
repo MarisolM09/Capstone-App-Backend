@@ -22,11 +22,11 @@ const show = (req, res) => {
 };
 
 const create = (req, res) => {
-  const { hike_name, location, hike_length, elevation_gain, rating, user_id } = req.body;
+  const { hike_name, location, hike_length, elevation_gain, user_id } = req.body;
 
   pool.query(
-    `INSERT INTO hikes (hike_name, location, hike_length, elevation_gain, rating, user_id)
-      VALUES ("${hike_name}","${location}", "${hike_length}", "${elevation_gain}", "${rating}", "${user_id}")`,
+    `INSERT INTO hikes (hike_name, location, hike_length, elevation_gain, user_id)
+      VALUES ("${hike_name}","${location}", "${hike_length}", "${elevation_gain}", "${user_id}")`,
     (err, row) => {
       if (err) {
         console.log({ message: "Error occurred: " + err });
