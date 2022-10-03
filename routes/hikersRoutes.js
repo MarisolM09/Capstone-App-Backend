@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const { checkJwt } = require("../middleware");
 const {
   list,
   show,
@@ -8,10 +9,10 @@ const {
   remove,
 } = require("../controllers/hikersControllers");
 
-router.get("/", list);
-router.get("/:id", show);
-router.post("/", create);
-router.put("/:id", update);
-router.delete("/:id", remove);
+router.get("/", checkJwt, list);
+router.get("/:id", checkJwt, show);
+router.post("/", checkJwt, create);
+router.put("/:id", checkJwt, update);
+router.delete("/:id", checkJwt, remove);
 
 module.exports = router;
